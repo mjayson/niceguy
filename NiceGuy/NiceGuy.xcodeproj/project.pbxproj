@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E00384AF1BCB34A7008C9BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */; };
-		E00384B11BCB34A7008C9BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00384B01BCB34A7008C9BCD /* ViewController.swift */; };
+		E00384B11BCB34A7008C9BCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00384B01BCB34A7008C9BCD /* LoginView.swift */; };
 		E00384B41BCB34A7008C9BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00384B21BCB34A7008C9BCD /* Main.storyboard */; };
 		E00384B61BCB34A7008C9BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00384B51BCB34A7008C9BCD /* Assets.xcassets */; };
 		E00384B91BCB34A7008C9BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */; };
 		E00384DD1BD0B34F008C9BCD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */; };
 		E00384DF1BD0B360008C9BCD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */; };
 		E00384E11BD0B36E008C9BCD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */; };
+		E0B057261C051A9D00AA1753 /* NiceGuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B057251C051A9D00AA1753 /* NiceGuyView.swift */; };
 		E0DBD9191BD1A35500474CAA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9121BD1A35500474CAA /* Bolts.framework */; };
 		E0DBD91A1BD1A35500474CAA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9131BD1A35500474CAA /* Parse.framework */; };
 		E0DBD91B1BD1A35500474CAA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */; };
@@ -27,7 +28,7 @@
 /* Begin PBXFileReference section */
 		E00384AB1BCB34A7008C9BCD /* NiceGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E00384B01BCB34A7008C9BCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E00384B01BCB34A7008C9BCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E00384B31BCB34A7008C9BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E00384B51BCB34A7008C9BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00384B81BCB34A7008C9BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		E0B057251C051A9D00AA1753 /* NiceGuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceGuyView.swift; sourceTree = "<group>"; };
 		E0DBD9121BD1A35500474CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "NiceGuy/Supporting Files/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
 		E0DBD9131BD1A35500474CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/Parse.framework"; sourceTree = "<group>"; };
 		E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseCrashReporting.framework"; sourceTree = "<group>"; };
@@ -86,7 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */,
-				E00384B01BCB34A7008C9BCD /* ViewController.swift */,
+				E00384B01BCB34A7008C9BCD /* LoginView.swift */,
+				E0B057251C051A9D00AA1753 /* NiceGuyView.swift */,
 				E00384B21BCB34A7008C9BCD /* Main.storyboard */,
 				E00384B51BCB34A7008C9BCD /* Assets.xcassets */,
 				E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */,
@@ -144,7 +147,7 @@
 				TargetAttributes = {
 					E00384AA1BCB34A7008C9BCD = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 4M6T5RPM8G;
+						DevelopmentTeam = 3ANLK88KDZ;
 					};
 				};
 			};
@@ -184,8 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E00384B11BCB34A7008C9BCD /* ViewController.swift in Sources */,
+				E00384B11BCB34A7008C9BCD /* LoginView.swift in Sources */,
 				E00384AF1BCB34A7008C9BCD /* AppDelegate.swift in Sources */,
+				E0B057261C051A9D00AA1753 /* NiceGuyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/Justin/Documents/FacebookSDK,
+					/Users/MatthewJayson/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -328,7 +332,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/Justin/Documents/FacebookSDK,
+					/Users/MatthewJayson/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -12,17 +12,10 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FBSDKShareKit
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginView: UIViewController, FBSDKLoginButtonDelegate {
 
-    @IBOutlet var daily_text: UILabel!
-    let list_of_compliments: [String] = [
-        "Your hair looks fantastic today",
-        "Nice shirt!",
-        "Wow, you have beuatiful eyes."
-    ]
-    
-    override func viewDidAppear(animated:Bool) {
-    
+    override func viewDidAppear(animated: Bool) {
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
