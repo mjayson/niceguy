@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00384AF1BCB34A7008C9BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */; };
+		E00384B11BCB34A7008C9BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00384B01BCB34A7008C9BCD /* ViewController.swift */; };
+		E00384B41BCB34A7008C9BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00384B21BCB34A7008C9BCD /* Main.storyboard */; };
+		E00384B61BCB34A7008C9BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00384B51BCB34A7008C9BCD /* Assets.xcassets */; };
+		E00384B91BCB34A7008C9BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */; };
+		E00384DD1BD0B34F008C9BCD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */; };
+		E00384DF1BD0B360008C9BCD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */; };
+		E00384E11BD0B36E008C9BCD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */; };
+		E0DBD9191BD1A35500474CAA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9121BD1A35500474CAA /* Bolts.framework */; };
+		E0DBD91A1BD1A35500474CAA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9131BD1A35500474CAA /* Parse.framework */; };
+		E0DBD91B1BD1A35500474CAA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */; };
+		E0DBD91C1BD1A35500474CAA /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9151BD1A35500474CAA /* ParseFacebookUtils.framework */; };
+		E0DBD91D1BD1A35500474CAA /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9161BD1A35500474CAA /* ParseFacebookUtilsV4.framework */; };
+		E0DBD91E1BD1A35500474CAA /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9171BD1A35500474CAA /* ParseTwitterUtils.framework */; };
+		E0DBD91F1BD1A35500474CAA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9181BD1A35500474CAA /* ParseUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E00384AB1BCB34A7008C9BCD /* NiceGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E00384B01BCB34A7008C9BCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E00384B31BCB34A7008C9BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E00384B51BCB34A7008C9BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E00384B81BCB34A7008C9BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E00384BA1BCB34A7008C9BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E0DBD9121BD1A35500474CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		E0DBD9131BD1A35500474CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		E0DBD9151BD1A35500474CAA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		E0DBD9161BD1A35500474CAA /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		E0DBD9171BD1A35500474CAA /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		E0DBD9181BD1A35500474CAA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00384A81BCB34A7008C9BCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DBD91C1BD1A35500474CAA /* ParseFacebookUtils.framework in Frameworks */,
+				E00384DF1BD0B360008C9BCD /* FBSDKLoginKit.framework in Frameworks */,
+				E0DBD91F1BD1A35500474CAA /* ParseUI.framework in Frameworks */,
+				E0DBD91D1BD1A35500474CAA /* ParseFacebookUtilsV4.framework in Frameworks */,
+				E0DBD91B1BD1A35500474CAA /* ParseCrashReporting.framework in Frameworks */,
+				E0DBD91E1BD1A35500474CAA /* ParseTwitterUtils.framework in Frameworks */,
+				E00384DD1BD0B34F008C9BCD /* FBSDKCoreKit.framework in Frameworks */,
+				E00384E11BD0B36E008C9BCD /* FBSDKShareKit.framework in Frameworks */,
+				E0DBD9191BD1A35500474CAA /* Bolts.framework in Frameworks */,
+				E0DBD91A1BD1A35500474CAA /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00384A21BCB34A7008C9BCD = {
+			isa = PBXGroup;
+			children = (
+				E00384AD1BCB34A7008C9BCD /* NiceGuy */,
+				E00384E21BD0B381008C9BCD /* Frameworks */,
+				E00384AC1BCB34A7008C9BCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E00384AC1BCB34A7008C9BCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00384AB1BCB34A7008C9BCD /* NiceGuy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E00384AD1BCB34A7008C9BCD /* NiceGuy */ = {
+			isa = PBXGroup;
+			children = (
+				E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */,
+				E00384B01BCB34A7008C9BCD /* ViewController.swift */,
+				E00384B21BCB34A7008C9BCD /* Main.storyboard */,
+				E00384B51BCB34A7008C9BCD /* Assets.xcassets */,
+				E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */,
+				E00384BA1BCB34A7008C9BCD /* Info.plist */,
+			);
+			path = NiceGuy;
+			sourceTree = "<group>";
+		};
+		E00384E21BD0B381008C9BCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0DBD9121BD1A35500474CAA /* Bolts.framework */,
+				E0DBD9131BD1A35500474CAA /* Parse.framework */,
+				E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */,
+				E0DBD9151BD1A35500474CAA /* ParseFacebookUtils.framework */,
+				E0DBD9161BD1A35500474CAA /* ParseFacebookUtilsV4.framework */,
+				E0DBD9171BD1A35500474CAA /* ParseTwitterUtils.framework */,
+				E0DBD9181BD1A35500474CAA /* ParseUI.framework */,
+				E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */,
+				E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */,
+				E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			path = Compliment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00384AA1BCB34A7008C9BCD /* NiceGuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00384D31BCB34A7008C9BCD /* Build configuration list for PBXNativeTarget "NiceGuy" */;
+			buildPhases = (
+				E00384A71BCB34A7008C9BCD /* Sources */,
+				E00384A81BCB34A7008C9BCD /* Frameworks */,
+				E00384A91BCB34A7008C9BCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiceGuy;
+			productName = "Compliment a day";
+			productReference = E00384AB1BCB34A7008C9BCD /* NiceGuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00384A31BCB34A7008C9BCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Matthew Jayson";
+				TargetAttributes = {
+					E00384AA1BCB34A7008C9BCD = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4M6T5RPM8G;
+					};
+				};
+			};
+			buildConfigurationList = E00384A61BCB34A7008C9BCD /* Build configuration list for PBXProject "NiceGuy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E00384A21BCB34A7008C9BCD;
+			productRefGroup = E00384AC1BCB34A7008C9BCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00384AA1BCB34A7008C9BCD /* NiceGuy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00384A91BCB34A7008C9BCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00384B91BCB34A7008C9BCD /* LaunchScreen.storyboard in Resources */,
+				E00384B61BCB34A7008C9BCD /* Assets.xcassets in Resources */,
+				E00384B41BCB34A7008C9BCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00384A71BCB34A7008C9BCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00384B11BCB34A7008C9BCD /* ViewController.swift in Sources */,
+				E00384AF1BCB34A7008C9BCD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E00384B21BCB34A7008C9BCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00384B31BCB34A7008C9BCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00384B81BCB34A7008C9BCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E00384D11BCB34A7008C9BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00384D21BCB34A7008C9BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E00384D41BCB34A7008C9BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NiceGuy",
+					"$(PROJECT_DIR)/NiceGuy/Supporting",
+					Files/FacebookSDK,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Compliment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattjayson.Compliment-a-day";
+				PRODUCT_NAME = NiceGuy;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E00384D51BCB34A7008C9BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NiceGuy",
+					"$(PROJECT_DIR)/NiceGuy/Supporting",
+					Files/FacebookSDK,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Compliment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattjayson.Compliment-a-day";
+				PRODUCT_NAME = NiceGuy;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00384A61BCB34A7008C9BCD /* Build configuration list for PBXProject "NiceGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00384D11BCB34A7008C9BCD /* Debug */,
+				E00384D21BCB34A7008C9BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00384D31BCB34A7008C9BCD /* Build configuration list for PBXNativeTarget "NiceGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00384D41BCB34A7008C9BCD /* Debug */,
+				E00384D51BCB34A7008C9BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E00384A31BCB34A7008C9BCD /* Project object */;
+}
