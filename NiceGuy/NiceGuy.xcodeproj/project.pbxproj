@@ -32,16 +32,16 @@
 		E00384B51BCB34A7008C9BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00384B81BCB34A7008C9BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E00384BA1BCB34A7008C9BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		E0DBD9121BD1A35500474CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		E0DBD9131BD1A35500474CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		E0DBD9151BD1A35500474CAA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		E0DBD9161BD1A35500474CAA /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		E0DBD9171BD1A35500474CAA /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
-		E0DBD9181BD1A35500474CAA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		E0DBD9121BD1A35500474CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "NiceGuy/Supporting Files/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
+		E0DBD9131BD1A35500474CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/Parse.framework"; sourceTree = "<group>"; };
+		E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		E0DBD9151BD1A35500474CAA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		E0DBD9161BD1A35500474CAA /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		E0DBD9171BD1A35500474CAA /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseTwitterUtils.framework"; sourceTree = "<group>"; };
+		E0DBD9181BD1A35500474CAA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseUI.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +297,7 @@
 		E00384D41BCB34A7008C9BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -305,11 +306,11 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					Files/FacebookSDK,
+					/Users/Justin/Documents/FacebookSDK,
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Compliment/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattjayson.Compliment-a-day";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
 				PROVISIONING_PROFILE = "";
 			};
@@ -318,6 +319,7 @@
 		E00384D51BCB34A7008C9BCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -326,11 +328,11 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					Files/FacebookSDK,
+					/Users/Justin/Documents/FacebookSDK,
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Compliment/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattjayson.Compliment-a-day";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
 				PROVISIONING_PROFILE = "";
 			};

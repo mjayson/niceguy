@@ -15,41 +15,17 @@ import FBSDKShareKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet var daily_text: UILabel!
-    
     let list_of_compliments: [String] = [
         "Your hair looks fantastic today",
         "Nice shirt!",
         "Wow, you have beuatiful eyes."
     ]
     
-    //this function will show all the compliments, one after another
-    func run_through_all() {
-        daily_text.text = list_of_compliments[0]
-        usleep(3000000)
-        daily_text.text = list_of_compliments[1]
-        usleep(1000000)
-        daily_text.text = list_of_compliments[2]
-        usleep(1000000)
-    }
-    
     override func viewDidAppear(animated:Bool) {
-        
-       daily_text.text = ""
-        usleep(1000000)
-        run_through_all()
+    
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-          daily_text.text = list_of_compliments[1]
-        
-        if list_of_compliments[1]=="Nice shirt" {
-            print("true")
-        }
-        else {
-            print("totally false bro")
-        }
         
         if FBSDKAccessToken.currentAccessToken() == nil {
             print("Not logged in...")
