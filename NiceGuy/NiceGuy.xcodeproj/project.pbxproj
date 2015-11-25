@@ -90,9 +90,9 @@
 				E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */,
 				E00384B01BCB34A7008C9BCD /* LoginView.swift */,
 				E0B057251C051A9D00AA1753 /* NiceGuyView.swift */,
-				E00384B21BCB34A7008C9BCD /* Main.storyboard */,
 				E00384B51BCB34A7008C9BCD /* Assets.xcassets */,
 				E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */,
+				E00384B21BCB34A7008C9BCD /* Main.storyboard */,
 				E00384BA1BCB34A7008C9BCD /* Info.plist */,
 			);
 			path = NiceGuy;

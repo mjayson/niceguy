@@ -16,10 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnO-hs-FGM">
-                                <rect key="frame" x="0.0" y="645" width="375" height="19"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-1G-wwa">
+                                <rect key="frame" x="94" y="28" width="184" height="65"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
+                                <rect key="frame" x="6" y="155" width="363" height="46"/>
+                                <string key="text">A daily dose of kindness 
+from your favorite virtual BFF</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
+                                <rect key="frame" x="9" y="504" width="357" height="107"/>
+                                <string key="text"> 1. Get a new compliment every day
+ 2. You'll never know what time it'll arrive
+ 3. When it comes, it'll be so worth it</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,9 +43,26 @@
                         <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RnO-hs-FGM" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" id="C7b-PB-v25"/>
-                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="RnO-hs-FGM" secondAttribute="bottom" constant="3" id="ktj-ms-gWl"/>
-                            <constraint firstAttribute="trailing" secondItem="RnO-hs-FGM" secondAttribute="trailing" id="ujb-gh-6m6"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="94" id="0MS-WD-CYZ"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" id="1Cm-jH-wWb"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="9" id="4is-Or-77r"/>
+                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="56" id="CIP-Sw-gH1"/>
+                            <constraint firstAttribute="trailing" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="9" id="GVj-mg-Jei"/>
+                            <constraint firstAttribute="trailing" secondItem="iOE-1G-wwa" secondAttribute="trailing" constant="97" id="Hqf-Rd-eQz"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="9" id="NAo-jX-JMx"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="8" id="Nuf-m0-dX5"/>
+                            <constraint firstAttribute="trailing" secondItem="iOE-1G-wwa" secondAttribute="trailing" constant="97" id="P6V-2o-2oI"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="94" id="T07-Km-YeA"/>
+                            <constraint firstAttribute="trailing" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="10" id="UpG-0e-99X"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" id="ZUj-1v-TXH"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="55" id="ab5-RO-Qra"/>
+                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="56" id="arB-2g-gAG"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leading" constant="8" id="b9p-zq-6MN"/>
+                            <constraint firstAttribute="trailing" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="9" id="hsl-sz-uXu"/>
+                            <constraint firstAttribute="trailing" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="10" id="njL-We-LLv"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="oqG-8l-ZK3"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="qZN-OG-G1h"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="55" id="yQD-BX-5Zf"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -59,20 +92,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-tK-SEy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait for it..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-tK-SEy">
                                 <rect key="frame" x="20" y="127" width="335" height="161"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="161" id="IHv-Bs-hWv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKV-qA-pCA">
+                                <rect key="frame" x="0.0" y="644" width="25" height="23"/>
+                                <state key="normal" title="Button" image="Logout"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="X0w-6J-ZcA" firstAttribute="top" secondItem="mKV-qA-pCA" secondAttribute="bottom" id="N1H-GC-cS1"/>
                             <constraint firstAttribute="trailing" secondItem="PnL-tK-SEy" secondAttribute="trailing" constant="20" id="Y2v-rd-h3C"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="cn1-WJ-Idt"/>
+                            <constraint firstItem="mKV-qA-pCA" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leading" id="fne-nf-96V"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="107" id="iYa-DL-OFr"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leading" constant="20" id="mbt-v0-yzP"/>
                         </constraints>
@@ -87,4 +126,7 @@
             <point key="canvasLocation" x="407.5" y="375.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logout" width="512" height="512"/>
+    </resources>
 </document>
