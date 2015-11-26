@@ -12,6 +12,11 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FBSDKShareKit
 
+var Full_name: String = ""
+var First_name: String = ""
+var Last_name: String = ""
+
+
 class LoginView: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidAppear(animated: Bool) {
@@ -25,6 +30,9 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
         }
         else {
             print("Logged in...")
+            returnUserData()
+            self.performSegueWithIdentifier("showNew", sender: self)
+            
         }
         
         let loginButton = FBSDKLoginButton()
@@ -54,6 +62,22 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User logged out...")
     }
-
+   
+    
+    func returnUserData() {
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+        
+        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+            if ((error) != nil){
+                // Process error
+                print("Error: \(error)")
+            }
+            else{
+                let userName : NSString = result.valueForKey("name") as! NSString
+                Full_name = userName as String
+                First_name = (Full_name.componentsSeparatedByString(" ")[0])
+                print(First_name)
+            }
+        })
+    }
 }
-
