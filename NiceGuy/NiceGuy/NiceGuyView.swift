@@ -43,7 +43,7 @@ class NiceGuyView: UIViewController{
     }
     
     override func viewDidAppear(animated: Bool) {
-        pullCompliment(randomInt(2, max: 60), user: "Matt")
+        pullCompliment(randomInt(1, max: 125), user: First_name)
     }
    
     override func viewDidLoad() {
