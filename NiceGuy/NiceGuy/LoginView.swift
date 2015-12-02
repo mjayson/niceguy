@@ -32,7 +32,6 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
             print("Logged in...")
             returnUserData()
             self.performSegueWithIdentifier("showNew", sender: self)
-            
         }
         
         let loginButton = FBSDKLoginButton()

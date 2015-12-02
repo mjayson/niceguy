@@ -20,7 +20,6 @@ class NiceGuyView: UIViewController{
     var index_used: [Int] = []
     let baseUrl: String = "https://script.google.com/macros/s/AKfycbzMtEeu6mZamavU5zaalpYj4nw0lQ7K6ILC3QYKJZwt2HN5GeLQ/exec?"
     
-   
     func pullCompliment(index: Int, user: String) {
         
         let url: NSURL = NSURL(string: "\(baseUrl)user=\(user)&id=\(index)")!
@@ -35,10 +34,11 @@ class NiceGuyView: UIViewController{
             }
         }
         let compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
-        compliment.text = compStr
+        compliment.text = compStr?.lowercaseString
     }
     
     func randomInt(min: Int, max: Int) -> Int {
+        returnUserData()
         return min + Int(arc4random_uniform(UInt32(max - min + 1)))
     }
     
