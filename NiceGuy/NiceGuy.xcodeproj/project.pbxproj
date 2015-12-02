@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01212B11C0EAB6200B210C3 /* googleSheetAPI.gs */ = {isa = PBXFileReference; explicitFileType = sourcecode.java; path = googleSheetAPI.gs; sourceTree = "<group>"; };
 		E00384AB1BCB34A7008C9BCD /* NiceGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E00384B01BCB34A7008C9BCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -67,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01212B21C0EAD8300B210C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D01212B11C0EAB6200B210C3 /* googleSheetAPI.gs */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E00384A21BCB34A7008C9BCD = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +103,7 @@
 				E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */,
 				E00384B21BCB34A7008C9BCD /* Main.storyboard */,
 				E00384BA1BCB34A7008C9BCD /* Info.plist */,
+				D01212B21C0EAD8300B210C3 /* Supporting Files */,
 			);
 			path = NiceGuy;
 			sourceTree = "<group>";
@@ -309,8 +319,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
-					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/MatthewJayson/Documents/FacebookSDK,
+					"~/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -331,8 +340,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
-					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/MatthewJayson/Documents/FacebookSDK,
+					"~/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

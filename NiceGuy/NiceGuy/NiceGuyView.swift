@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FBSDKShareKit
 
-class NiceGuyView: UIViewController{
+class NiceGuyView: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var compliment: UILabel!
     
@@ -33,21 +33,39 @@ class NiceGuyView: UIViewController{
                 print("Compliment API success!")
             }
         }
-        let compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
+        var compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
+        compStr = compStr!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         compliment.text = compStr?.lowercaseString
     }
-    
     func randomInt(min: Int, max: Int) -> Int {
-        returnUserData()
         return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+    }
+
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if error == nil {
+            print("Login complete!")
+            self.performSegueWithIdentifier("showNew", sender: self)
+        }
+        else {
+            print(error.localizedDescription)
+        }
+    }
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        print("User logged out...")
     }
     
     override func viewDidAppear(animated: Bool) {
-        pullCompliment(randomInt(1, max: 125), user: First_name)
+        pullCompliment(randomInt(2, max: 126), user: First_name)
     }
-   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Create Logout Button
+        let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.center = self.view.center
+        loginButton.center.y = loginButton.center.y + 150.0
+        loginButton.delegate = self
+        self.view.addSubview(loginButton)
     }
-    
 }
