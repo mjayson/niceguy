@@ -27,6 +27,10 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
             loginButton.center = self.view.center
             loginButton.delegate = self
             self.view.addSubview(loginButton)
+            
+            //FBSDKAccessTokenDidChangeUserID = nil
+            FBSDKAccessToken.setCurrentAccessToken(nil)
+            
         }
         else {
             print("Logged in...")
@@ -36,11 +40,12 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         if FBSDKAccessToken.currentAccessToken() != nil {
             print("Already logged in, getting user data...")
             returnUserData()
         }
+        */
 
     }
     override func didReceiveMemoryWarning() {

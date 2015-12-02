@@ -8,7 +8,9 @@
 
 import UIKit
 import Foundation
+import Parse
 import FBSDKCoreKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
