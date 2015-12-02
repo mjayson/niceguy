@@ -1,11 +1,10 @@
 //
-//  googleSheetAPI.gs (Java/Google Sheets Script)
+//  googleSheetAPI.gs (Javascript/Google Sheets Script)
 //  Functions for Interacting With Values in Google Sheets
 //
 //  Created by Justin Kaufman on 11/10/15.
 //  Copyright © 2015 Justin Kaufman. All rights reserved.
 //
-
 
 // Returns a compliment from the spreadsheet located at:
 // https://docs.google.com/spreadsheets/d/1hFUsI3PYRpYAXTGbU83uo1lZV0RdahyBtmtv3kGzVyA/edit#gid=0&vpid=A2

@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D01212B11C0EAB6200B210C3 /* googleSheetAPI.gs */ = {isa = PBXFileReference; explicitFileType = sourcecode.java; path = googleSheetAPI.gs; sourceTree = "<group>"; };
+		D01212B11C0EAB6200B210C3 /* googleSheetAPI.gs */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = googleSheetAPI.gs; sourceTree = "<group>"; };
 		E00384AB1BCB34A7008C9BCD /* NiceGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E00384B01BCB34A7008C9BCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };

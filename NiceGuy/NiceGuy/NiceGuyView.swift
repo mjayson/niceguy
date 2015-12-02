@@ -15,11 +15,24 @@ import FBSDKShareKit
 class NiceGuyView: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var compliment: UILabel!
-    
     var logged_in: Bool = false
     var index_used: [Int] = []
     let baseUrl: String = "https://script.google.com/macros/s/AKfycbzMtEeu6mZamavU5zaalpYj4nw0lQ7K6ILC3QYKJZwt2HN5GeLQ/exec?"
     
+    override func viewDidAppear(animated: Bool) {
+        pullCompliment(randomInt(2, max: 126), user: First_name)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Create Logout Button
+        let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.center = self.view.center
+        loginButton.center.y = loginButton.center.y + 150.0
+        loginButton.delegate = self
+        self.view.addSubview(loginButton)
+    }
     func pullCompliment(index: Int, user: String) {
         
         let url: NSURL = NSURL(string: "\(baseUrl)user=\(user)&id=\(index)")!
@@ -40,7 +53,6 @@ class NiceGuyView: UIViewController, FBSDKLoginButtonDelegate {
     func randomInt(min: Int, max: Int) -> Int {
         return min + Int(arc4random_uniform(UInt32(max - min + 1)))
     }
-
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if error == nil {
             print("Login complete!")
@@ -52,20 +64,5 @@ class NiceGuyView: UIViewController, FBSDKLoginButtonDelegate {
     }
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User logged out...")
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        pullCompliment(randomInt(2, max: 126), user: First_name)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Create Logout Button
-        let loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        loginButton.center = self.view.center
-        loginButton.center.y = loginButton.center.y + 150.0
-        loginButton.delegate = self
-        self.view.addSubview(loginButton)
     }
 }

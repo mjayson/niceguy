@@ -34,7 +34,6 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
             self.performSegueWithIdentifier("showNew", sender: self)
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
