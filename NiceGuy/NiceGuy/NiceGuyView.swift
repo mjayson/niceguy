@@ -64,5 +64,6 @@ class NiceGuyView: UIViewController, FBSDKLoginButtonDelegate {
     }
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User logged out...")
+        self.performSegueWithIdentifier("showLogin", sender: self)
     }
 }
