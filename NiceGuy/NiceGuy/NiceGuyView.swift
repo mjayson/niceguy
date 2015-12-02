@@ -16,6 +16,12 @@ class NiceGuyView: UIViewController{
 
     @IBOutlet weak var compliment: UILabel!
     
+    @IBAction func btnFBLoginPressed(sender: AnyObject) {
+        //fbLoginManager.logOut()
+        FBSDKAccessToken.setCurrentAccessToken(nil)
+        self.performSegueWithIdentifier("showLogin", sender: self)
+    }
+    
     var logged_in: Bool = false
     var index_used: [Int] = []
     let baseUrl: String = "https://script.google.com/macros/s/AKfycbzMtEeu6mZamavU5zaalpYj4nw0lQ7K6ILC3QYKJZwt2HN5GeLQ/exec?"
@@ -33,17 +39,22 @@ class NiceGuyView: UIViewController{
                 print("Compliment API success!")
             }
         }
-        let compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
+        var compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
+        compStr = compStr!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
+        
+        
+        
         compliment.text = compStr?.lowercaseString
     }
     
     func randomInt(min: Int, max: Int) -> Int {
-        returnUserData()
         return min + Int(arc4random_uniform(UInt32(max - min + 1)))
     }
     
     override func viewDidAppear(animated: Bool) {
-        pullCompliment(randomInt(1, max: 125), user: First_name)
+        //pulling from row, not unit number
+        pullCompliment(randomInt(2, max: 126), user: First_name)
     }
    
     override func viewDidLoad() {

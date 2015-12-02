@@ -98,6 +98,9 @@ What it'll say...mystery!</string>
                                     <constraint firstAttribute="height" constant="23" id="sfU-7K-RVq"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Logout"/>
+                                <connections>
+                                    <action selector="btnFBLoginPressed:" destination="4DX-zn-dt7" eventType="touchUpInside" id="utc-ew-7lI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-tK-SEy">
                                 <rect key="frame" x="20" y="122" width="335" height="161"/>
@@ -131,6 +134,7 @@ What it'll say...mystery!</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="compliment" destination="PnL-tK-SEy" id="9fn-0N-eZ3"/>
+                        <segue destination="2gc-0c-71f" kind="presentation" identifier="showLogin" id="gaj-X4-FaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2T-9q-chS" userLabel="First Responder" sceneMemberID="firstResponder"/>

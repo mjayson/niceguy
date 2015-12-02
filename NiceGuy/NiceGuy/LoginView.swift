@@ -21,24 +21,23 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidAppear(animated: Bool) {
         
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
         if FBSDKAccessToken.currentAccessToken() == nil {
             print("Not logged in...")
+            
+            let loginButton = FBSDKLoginButton()
+            loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+            loginButton.center = self.view.center
+            loginButton.delegate = self
+            self.view.addSubview(loginButton)
         }
         else {
             print("Logged in...")
             returnUserData()
             self.performSegueWithIdentifier("showNew", sender: self)
         }
-        
-        let loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        loginButton.center = self.view.center
-        loginButton.delegate = self
-        self.view.addSubview(loginButton)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
