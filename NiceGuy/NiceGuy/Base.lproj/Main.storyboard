@@ -27,26 +27,30 @@
                                 <color key="textColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
-                                <rect key="frame" x="3" y="136" width="369" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
+                                <rect key="frame" x="3" y="107" width="369" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="b5B-Qn-PTb"/>
                                 </constraints>
                                 <string key="text">A daily dose of kindness 
 from your virtual BFF</string>
-                                <fontDescription key="fontDescription" name="CourierNewPS-ItalicMT" family="Courier New" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
-                                <rect key="frame" x="8" y="584" width="359" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
+                                <rect key="frame" x="8" y="219" width="364" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="J1A-oP-8Ci"/>
                                 </constraints>
-                                <string key="text">Get a new compliment every day.
-Time you'll get it...mystery.
-What it'll say...mystery!</string>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="19"/>
+                                <string key="text">-- Noon is now a special time
+
+-- Each day at noon, you'll get a 
+   compliment
+
+-- It could change everything about 
+   your day...</string>
+                                <fontDescription key="fontDescription" name="CourierNewPS-ItalicMT" family="Courier New" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

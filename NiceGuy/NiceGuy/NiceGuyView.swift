@@ -42,9 +42,6 @@ class NiceGuyView: UIViewController{
         var compStr = String(data: dataVal, encoding: NSUTF8StringEncoding)
         compStr = compStr!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
-        
-        
-        
         compliment.text = compStr?.lowercaseString
     }
     
