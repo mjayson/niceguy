@@ -350,7 +350,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/Justin/Documents/FacebookSDK,
+					/Users/MatthewJayson/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -372,7 +372,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/NiceGuy",
 					"$(PROJECT_DIR)/NiceGuy/Supporting",
-					/Users/Justin/Documents/FacebookSDK,
+					/Users/MatthewJayson/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NiceGuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
