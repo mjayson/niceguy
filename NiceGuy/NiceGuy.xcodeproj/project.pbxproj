@@ -22,7 +22,6 @@
 		E0B057351C0F982300AA1753 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B057341C0F982300AA1753 /* CoreLocation.framework */; };
 		E0B057371C0F983100AA1753 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B057361C0F983100AA1753 /* QuartzCore.framework */; };
 		E0B057391C0F983A00AA1753 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B057381C0F983A00AA1753 /* Security.framework */; };
-		E0B0573B1C0F984300AA1753 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0573A1C0F984300AA1753 /* StoreKit.framework */; };
 		E0B0573D1C0F984C00AA1753 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0573C1C0F984C00AA1753 /* SystemConfiguration.framework */; };
 		E0B0573F1C0F985B00AA1753 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0573E1C0F985B00AA1753 /* libz.tbd */; };
 		E0B057411C0F986800AA1753 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B057401C0F986800AA1753 /* libsqlite3.tbd */; };
@@ -46,6 +45,7 @@
 		E00384DC1BD0B34F008C9BCD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		E00384DE1BD0B360008C9BCD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		E00384E01BD0B36E008C9BCD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "NiceGuy/Supporting Files/FacebookSDK/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		E01D93DD1C7591D30001A9D6 /* NiceGuy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NiceGuy.entitlements; sourceTree = "<group>"; };
 		E0B057251C051A9D00AA1753 /* NiceGuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceGuyView.swift; sourceTree = "<group>"; };
 		E0B0572E1C0F97F700AA1753 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E0B057301C0F980800AA1753 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -53,7 +53,6 @@
 		E0B057341C0F982300AA1753 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E0B057361C0F983100AA1753 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E0B057381C0F983A00AA1753 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		E0B0573A1C0F984300AA1753 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E0B0573C1C0F984C00AA1753 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E0B0573E1C0F985B00AA1753 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E0B057401C0F986800AA1753 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -74,7 +73,6 @@
 				E0B057411C0F986800AA1753 /* libsqlite3.tbd in Frameworks */,
 				E0B0573F1C0F985B00AA1753 /* libz.tbd in Frameworks */,
 				E0B0573D1C0F984C00AA1753 /* SystemConfiguration.framework in Frameworks */,
-				E0B0573B1C0F984300AA1753 /* StoreKit.framework in Frameworks */,
 				E0B057391C0F983A00AA1753 /* Security.framework in Frameworks */,
 				E0B057371C0F983100AA1753 /* QuartzCore.framework in Frameworks */,
 				E0B057351C0F982300AA1753 /* CoreLocation.framework in Frameworks */,
@@ -117,6 +115,7 @@
 		E00384AD1BCB34A7008C9BCD /* NiceGuy */ = {
 			isa = PBXGroup;
 			children = (
+				E01D93DD1C7591D30001A9D6 /* NiceGuy.entitlements */,
 				E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */,
 				E00384B01BCB34A7008C9BCD /* LoginView.swift */,
 				E0B057251C051A9D00AA1753 /* NiceGuyView.swift */,
@@ -134,7 +133,6 @@
 				E0B057401C0F986800AA1753 /* libsqlite3.tbd */,
 				E0B0573E1C0F985B00AA1753 /* libz.tbd */,
 				E0B0573C1C0F984C00AA1753 /* SystemConfiguration.framework */,
-				E0B0573A1C0F984300AA1753 /* StoreKit.framework */,
 				E0B057381C0F983A00AA1753 /* Security.framework */,
 				E0B057361C0F983100AA1753 /* QuartzCore.framework */,
 				E0B057341C0F982300AA1753 /* CoreLocation.framework */,
@@ -188,6 +186,20 @@
 					E00384AA1BCB34A7008C9BCD = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 3ANLK88KDZ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -343,8 +355,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -356,7 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "78ed7f53-462e-4522-96a8-a2e26dc95c38";
 			};
 			name = Debug;
 		};
@@ -365,8 +377,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -378,7 +390,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "78ed7f53-462e-4522-96a8-a2e26dc95c38";
 			};
 			name = Release;
 		};
