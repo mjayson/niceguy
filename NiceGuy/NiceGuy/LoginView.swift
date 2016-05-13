@@ -113,7 +113,23 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
                 
                 print("First name: \(First_name)")
                 
-                self.performSegueWithIdentifier("showNew", sender: self)
+                
+                //if we have not asked user permission for push notifications or he has rejected, then transition user to Notification view
+        
+                let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+                
+                if settings!.types == .None {
+                    
+                    self.performSegueWithIdentifier("HasNotApprovedNotifications", sender: self)
+                    
+                }
+                    
+                    
+                //if he he has given us pemrission for notifications, transition to compliment view
+                else{
+                    self.performSegueWithIdentifier("showNew", sender: self)
+
+                }
                 
             }
             

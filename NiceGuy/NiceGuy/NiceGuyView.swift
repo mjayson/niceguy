@@ -267,6 +267,10 @@ class NiceGuyView: UIViewController{
                 // iii. set value of index equal to -1
                 usedIndexArray[result] = -1
                 
+                //set nsuserdefault array at key usedIndex equal to usedIndexArray
+
+                defaults.setObject(usedIndexArray, forKey: "usedIndex")
+                
                 // iv. display compliment
                 compliment.text = compliment_shared[result]
                 
@@ -278,7 +282,7 @@ class NiceGuyView: UIViewController{
             else {
                 // i. set all values in array to equal 0
                 
-                compliment.text = "we out yo"
+                compliment.text = "the end"
                 
             }
     }
@@ -287,6 +291,11 @@ class NiceGuyView: UIViewController{
     override func viewDidAppear(animated: Bool) {
 
         display_unique_compliment()
+        
+        for index in 1...100{
+            display_unique_compliment()
+        }
+        
         
         /*
         // 2a: There are unused compliments left in the array
@@ -346,14 +355,31 @@ class NiceGuyView: UIViewController{
     
         super.viewDidLoad()
         
-        // if there's an array stored in NSUserDefaults then load it.
-
+        
         let Read_index = defaults.objectForKey("usedIndex") as? [Int]
-
+        
+        // if there's an array stored in NSUserDefaults then load it.
         if Read_index != nil {
             usedIndexArray = Read_index!
-        }
         
+            //check array to see if there are any zeros in it
+            if (usedIndexArray.contains(0) != true) {
+            
+                //if there is not a zero, then...replace values of array with 100 0s
+                
+                for index in 1...100 {
+                    
+                    usedIndexArray[index] = 0
+                    
+                }
+                
+                defaults.setObject(usedIndexArray, forKey: "usedIndex")
+        
+            }
+
+        
+        }
+                
             //create new array with previous function and store values
         else{
             set_array_to_default()
@@ -361,9 +387,6 @@ class NiceGuyView: UIViewController{
         
         //If not, then we create a new array
         
-        
-        // Setup time and date for daily compliment delivery
-               
     }
-    
+        // Setup time and date for daily compliment delivery
 }

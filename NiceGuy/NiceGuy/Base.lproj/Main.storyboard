@@ -71,11 +71,49 @@ from your virtual BFF</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="4DX-zn-dt7" kind="presentation" identifier="showNew" id="jbT-ei-Vgn"/>
+                        <segue destination="uTA-rs-QeB" kind="presentation" identifier="HasNotApprovedNotifications" id="lrx-4i-Fyh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIn-JU-yhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42.5" y="375.5"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="usc-rD-pZq">
+            <objects>
+                <viewController title="Notifications" id="uTA-rs-QeB" customClass="NotificationView" customModule="NiceGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FzL-RH-UZG"/>
+                        <viewControllerLayoutGuide type="bottom" id="x3X-sn-y11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sv2-A9-I9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
+                                <rect key="frame" x="142" y="394" width="91" height="30"/>
+                                <state key="normal" title="Sound good?"/>
+                                <connections>
+                                    <action selector="PressSoundsGood:" destination="uTA-rs-QeB" eventType="touchUpInside" id="5XT-sy-GJf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To get make-you-feel-amazing compliments, you'll need to say &quot;Yes&quot; to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
+                                <rect key="frame" x="9" y="62" width="357" height="113"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="4DX-zn-dt7" kind="presentation" identifier="NotificationsToCompliment" id="Fid-vI-jZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tX0-dK-wiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358.5" y="375.5"/>
         </scene>
         <!--Nice Guy View-->
         <scene sceneID="Ewt-qM-JVQ">
@@ -143,10 +181,13 @@ from your virtual BFF</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2T-9q-chS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407.5" y="375.5"/>
+            <point key="canvasLocation" x="781.5" y="375.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logout" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fid-vI-jZr"/>
+    </inferredMetricsTieBreakers>
 </document>

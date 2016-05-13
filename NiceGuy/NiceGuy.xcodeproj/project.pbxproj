@@ -25,6 +25,7 @@
 		E0B0573D1C0F984C00AA1753 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0573C1C0F984C00AA1753 /* SystemConfiguration.framework */; };
 		E0B0573F1C0F985B00AA1753 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0573E1C0F985B00AA1753 /* libz.tbd */; };
 		E0B057411C0F986800AA1753 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B057401C0F986800AA1753 /* libsqlite3.tbd */; };
+		E0D4A9F91CE64BC8002BED94 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D4A9F81CE64BC8002BED94 /* Notification.swift */; };
 		E0DBD9191BD1A35500474CAA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9121BD1A35500474CAA /* Bolts.framework */; };
 		E0DBD91A1BD1A35500474CAA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9131BD1A35500474CAA /* Parse.framework */; };
 		E0DBD91B1BD1A35500474CAA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */; };
@@ -56,6 +57,7 @@
 		E0B0573C1C0F984C00AA1753 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E0B0573E1C0F985B00AA1753 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E0B057401C0F986800AA1753 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E0D4A9F81CE64BC8002BED94 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		E0DBD9121BD1A35500474CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "NiceGuy/Supporting Files/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
 		E0DBD9131BD1A35500474CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/Parse.framework"; sourceTree = "<group>"; };
 		E0DBD9141BD1A35500474CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "NiceGuy/Supporting Files/parse-library-1.9.0/ParseCrashReporting.framework"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				E01D93DD1C7591D30001A9D6 /* NiceGuy.entitlements */,
 				E00384AE1BCB34A7008C9BCD /* AppDelegate.swift */,
 				E00384B01BCB34A7008C9BCD /* LoginView.swift */,
+				E0D4A9F81CE64BC8002BED94 /* Notification.swift */,
 				E0B057251C051A9D00AA1753 /* NiceGuyView.swift */,
 				E00384B51BCB34A7008C9BCD /* Assets.xcassets */,
 				E00384B71BCB34A7008C9BCD /* LaunchScreen.storyboard */,
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D4A9F91CE64BC8002BED94 /* Notification.swift in Sources */,
 				E00384B11BCB34A7008C9BCD /* LoginView.swift in Sources */,
 				E00384AF1BCB34A7008C9BCD /* AppDelegate.swift in Sources */,
 				E0B057261C051A9D00AA1753 /* NiceGuyView.swift in Sources */,
