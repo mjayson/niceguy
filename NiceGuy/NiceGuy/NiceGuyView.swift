@@ -159,90 +159,6 @@ class NiceGuyView: UIViewController{
         
     }
     
-   /* func displayUniqueCompliment() {
-        
-        let index = getUnusedComplimentIndex()
-        
-        print("Unique Index: \(index)")
-        
-        if index == -1 {
-            
-            compliment.text = "I'M OUT OF COMPLIMENTS!"
-            
-            let delay = 5.5 * Double(NSEC_PER_SEC)
-            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
-                self.displayUniqueCompliment()
-            }
-            
-            return
-        
-        }
-        
-        let complimentString = compliment_shared[index]!
-        
-        compliment.text = "\(First_name), \(complimentString)"
-        
-    }
-    
-    func getUnusedComplimentIndex() -> Int {
-        
-        var result = randomInt(1, max: 100)
-        
-        if let usedIndexesTemp = NSUserDefaults.standardUserDefaults().arrayForKey("usedIndexes") as? [Int] {
-            
-            usedIndexes = usedIndexesTemp
-            
-        }
-            
-        else {
-            
-            usedIndexes = [-1]
-            
-            defaults.setObject(usedIndexes, forKey: "usedIndexes")
-            
-        }
-        
-        var possibleUnique: Int = randomInt(1, max: 100)
-        
-        // precondition(usedIndexes.count < 100)
-        
-        repeat {
-            
-            possibleUnique = randomInt(1, max: 100)
-            
-            print("Candidate Index: \(possibleUnique)")
-            
-            
-        } while usedIndexes.contains(possibleUnique)
-
-        
-        // User has run out of uniques!
-        if usedIndexes.contains(possibleUnique) {
-            
-            usedIndexes = [-1]
-            
-            defaults.setObject(usedIndexes, forKey: "usedIndexes")
-            
-            result = -1
-            
-            return result
-            
-        }
-        
-        else {
-            
-            // Add unique index to stored list and return as int
-            result = possibleUnique
-            
-            usedIndexes.append(result)
-            
-            defaults.setObject(usedIndexes, forKey: "usedIndexes")
-            
-            return result
-        }
-        
-    } */
     
     func randomInt(min: Int, max: Int) -> Int {
         
@@ -256,7 +172,7 @@ class NiceGuyView: UIViewController{
             // 2a: There are unused compliments left in the array
             if (usedIndexArray.contains(0) == true) {
                 
-                // i. Set result equal to a random number between 10 and 100
+                // i. Set result equal to a random number between 1 and 100
                 result = randomInt(1, max: 100)
                 
                 // ii. Repeatedly pull a random number until the value of the index of that number does not equal -1
@@ -281,8 +197,22 @@ class NiceGuyView: UIViewController{
                 // 2b: We’ve run through all the compliments already
             else {
                 // i. set all values in array to equal 0
+              
+                for index in 1...100 {
+                    
+                    usedIndexArray[index] = 0
+                    
+                }
+
                 
-                compliment.text = "the end"
+                // store these values in nsuserdefaults
+
+                defaults.setObject(usedIndexArray, forKey: "usedIndex")
+
+                //send us back to the primary fucnction, now that we've reset the array
+                display_unique_compliment()
+                
+
                 
             }
     }
@@ -291,56 +221,6 @@ class NiceGuyView: UIViewController{
     override func viewDidAppear(animated: Bool) {
 
         display_unique_compliment()
-        
-        for index in 1...100{
-            display_unique_compliment()
-        }
-        
-        
-        /*
-        // 2a: There are unused compliments left in the array
-        if (usedIndexArray.contains(0) == true) {
-            
-            // i. Set result equal to a random number between 10 and 100
-            result = randomInt(1, max: 100)
-            
-            // ii. Repeatedly pull a random number until the value of the index of that number does not equal -1
-            while usedIndexArray[result] == -1 {
-                result = randomInt(1, max: 100)
-            }
-            
-            // iii. set value of index equal to -1
-            usedIndexArray[result] = -1
-            
-            // iv. display compliment
-            compliment.text = compliment_shared[result]
-            
-        }
-            
-            // 2b: We’ve run through all the compliments already
-        else {
-            // i. set all values in array to equal 0
-            
-            for index in 1...100 {
-                usedIndexArray[index] = 0
-            }
-        }
-
-      */
-        
-        
-        
-        
- /*       //set the compliment text to be the users first name, a comma, and the new, randomly generated compliment
-        compliment.text = First_name + ", " + compliment_shared[random_int]!
-        
-        var previous_index: Int = defaults.integerForKey("Used_compliments")
-        
-        print(previous_index)
-
-        
-        //sets the key value of Used_compliments to random_int
-        defaults.setValue(random_int, forKey: "Used_compliments")    */
         
         
         

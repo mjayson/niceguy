@@ -16,25 +16,47 @@ class NotificationView: UIViewController{
 
     @IBAction func PressSoundsGood(sender: AnyObject) {
         //trigger notifcation alert from iOS
-      
-        //let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-        //UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+
+        let defaults = NSUserDefaults.standardUserDefaults()
         
+        let PermissionFlag = defaults.integerForKey("PermissionYet")
         
-        var alertController = UIAlertController (title: "Ready?", message: "1st click Notifications, 2nd click Allow", preferredStyle: .Alert)
-        
-        var settingsAction = UIAlertAction(title: "Go", style: .Default) { (_) -> Void in
-            let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)
-            if let url = settingsUrl {
-                UIApplication.sharedApplication().openURL(url)
+        if PermissionFlag == 1 {
+
+            var alertController = UIAlertController (title: "Ready?", message: "1st click Notifications, 2nd click Allow", preferredStyle: .Alert)
+            
+            var settingsAction = UIAlertAction(title: "Notifications", style: .Default) { (_) -> Void in
+                let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)
+                if let url = settingsUrl {
+                    UIApplication.sharedApplication().openURL(url)
+                }
             }
+            
+            var cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+            alertController.addAction(settingsAction)
+            alertController.addAction(cancelAction)
+            
+            presentViewController(alertController, animated: true, completion: nil);
+            
         }
         
-        var cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
-        alertController.addAction(settingsAction)
-        alertController.addAction(cancelAction)
+        else{
+            //record that we're prompting them
+            
+            defaults.setInteger(1, forKey: "PermissionYet")
+
+            
+            //prompt them
+
+            let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+
+            
+        }
         
-        presentViewController(alertController, animated: true, completion: nil);
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         
         
     }
@@ -43,12 +65,19 @@ class NotificationView: UIViewController{
     
     
     
+    override func viewDidLoad() {
+      
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
     
+        let PermissionFlag = defaults.integerForKey("PermissionYet")
     
+    // if there's an array stored in NSUserDefaults then load it.
+        if !(PermissionFlag == 1 || PermissionFlag == -1) {
     
-    
-    
-    
+            defaults.setInteger(-1, forKey: "PermissionYet")
+        }
+    }
     
     
     
