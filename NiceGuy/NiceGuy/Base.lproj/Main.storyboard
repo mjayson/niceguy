@@ -113,7 +113,7 @@ from your virtual BFF</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tX0-dK-wiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="358.5" y="375.5"/>
+            <point key="canvasLocation" x="216.5" y="1037.5"/>
         </scene>
         <!--Nice Guy View-->
         <scene sceneID="Ewt-qM-JVQ">

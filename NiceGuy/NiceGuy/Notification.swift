@@ -13,10 +13,13 @@ import UIKit
 
 class NotificationView: UIViewController{
 
+    var permissionCheckTimer: NSTimer?
 
     @IBAction func PressSoundsGood(sender: AnyObject) {
         //trigger notifcation alert from iOS
-
+        
+        permissionCheckTimer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "checkPermission", userInfo: nil, repeats: true)
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         
         let PermissionFlag = defaults.integerForKey("PermissionYet")
@@ -53,6 +56,30 @@ class NotificationView: UIViewController{
 
             
         }
+       
+        
+        let currentSettings = UIApplication.sharedApplication().currentUserNotificationSettings()
+        
+        if currentSettings!.types != .None {
+            print("notifications enabled yo!")
+            self.performSegueWithIdentifier("NotificationsToCompliment", sender: self)
+        }
+    }
+    
+    
+    func checkPermission() {
+        let currentSettings = UIApplication.sharedApplication().currentUserNotificationSettings()
+        
+        if currentSettings!.types != .None {
+            print("notifications enabled yo!")
+            self.performSegueWithIdentifier("NotificationsToCompliment", sender: self)
+        
+        
+        
+        }
+
+        
+        
         
     }
     
@@ -76,8 +103,17 @@ class NotificationView: UIViewController{
         if !(PermissionFlag == 1 || PermissionFlag == -1) {
     
             defaults.setInteger(-1, forKey: "PermissionYet")
+            
+        }
+        if PermissionFlag == -1{
+    
+            self.performSegueWithIdentifier("NotificationsToCompliment", sender: self)
+            
         }
     }
+    
+    
+    
     
     
     
@@ -85,6 +121,6 @@ class NotificationView: UIViewController{
     //for later, when we want to transition to the compliment screen
 //    self.performSegueWithIdentifier("NotificationTo Compliment", sender: self)
 
-    
+
 
 }

@@ -166,6 +166,10 @@ class NiceGuyView: UIViewController{
         
     }
     
+    func getCompliment() -> String {
+        return "hello"
+    }
+    
     
     func display_unique_compliment(){
         
@@ -191,6 +195,7 @@ class NiceGuyView: UIViewController{
                 compliment.text = compliment_shared[result]
                 
                     print(result)
+                
                 
             }
                 
@@ -234,6 +239,23 @@ class NiceGuyView: UIViewController{
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        
+    
+        let notification = UILocalNotification()
+        
+        /* Time and timezone settings */
+        notification.fireDate = NSDate(timeIntervalSinceNow: 8.0)
+        notification.repeatInterval = NSCalendarUnit.Day
+        notification.timeZone = NSCalendar.currentCalendar().timeZone
+        notification.alertBody = compliment_shared[55]
+        
+
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    
+
+        
+        
+        
         
         
         let Read_index = defaults.objectForKey("usedIndex") as? [Int]
