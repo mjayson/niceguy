@@ -170,6 +170,35 @@ class NiceGuyView: UIViewController{
         return "hello"
     }
     
+    func return_unique_compliment() -> String {
+        
+        if (usedIndexArray.contains(0) == true) {
+            
+            // i. Set result equal to a random number between 1 and 100
+            var result = randomInt(1, max: 100)
+            
+            // ii. Repeatedly pull a random number until the value of the index of that number does not equal -1
+            while usedIndexArray[result] == -1 {
+                result = randomInt(1, max: 100)
+            }
+            
+            // iii. set value of index equal to -1
+            usedIndexArray[result] = -1
+            
+            //set nsuserdefault array at key usedIndex equal to usedIndexArray
+            
+            defaults.setObject(usedIndexArray, forKey: "usedIndex")
+            
+            // iv. return compliment
+            
+            return First_name + ", " + compliment_shared[result]!
+            
+            
+        }
+        
+        return "error"
+    }
+    
     
     func display_unique_compliment(){
         
@@ -192,7 +221,7 @@ class NiceGuyView: UIViewController{
                 defaults.setObject(usedIndexArray, forKey: "usedIndex")
                 
                 // iv. display compliment
-                compliment.text = compliment_shared[result]
+                compliment.text = First_name + ", " + compliment_shared[result]!
                 
                     print(result)
                 
@@ -241,21 +270,40 @@ class NiceGuyView: UIViewController{
         super.viewDidLoad()
         
     
-        let notification = UILocalNotification()
-        
-        /* Time and timezone settings */
-        notification.fireDate = NSDate(timeIntervalSinceNow: 8.0)
-        notification.repeatInterval = NSCalendarUnit.Day
-        notification.timeZone = NSCalendar.currentCalendar().timeZone
-        notification.alertBody = compliment_shared[55]
-        
+        // THIS CODE SCHEDULES ONE NOTIFICATION WITH A GIVEN TIME AND TEXT
+        // GOAL: WE NEED TO SCHEDULE ALL 100 COMPLIMENTS TO BE SHOWN ON NOON ONE DAY AFTER THE NEXT
 
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-    
+        var calendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        var notification = UILocalNotification()
+        
+        // 1. Set variable fireDate equal to the current time and date
+        var dateFire = NSDate()
+        // 2. Create variable “fireComponents”, which breaks out the different aspects of time/date into parts (day/months/year/hour/etc.)
+      var fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+        // 3. Ask, ‘if hour is greater than noon right now, then do something to our fireDate value’
+        if (fireComponents.hour >= 12) {
+            dateFire=dateFire.dateByAddingTimeInterval(86400) // Use tomorrow's date
+            fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+        }
+        fireComponents.hour = 12
+        fireComponents.minute = 0
+        dateFire = calendar.dateFromComponents(fireComponents)!
+        
+        while usedIndexArray.contains(0) == true {
+            // set date equal to today at noon if we haven’t reached it yet. Or if we have, it sets it equal to noon tomorrow
+            notification.fireDate = dateFire
+            //returns unused compliment
+            notification.alertBody = return_unique_compliment()
+            
+            //schedule notifications
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+            
+            
+            // adds 24 hrs to whatever the last date and time were
+            dateFire=dateFire.dateByAddingTimeInterval(86400)
+            
+        }
 
-        
-        
-        
         
         
         let Read_index = defaults.objectForKey("usedIndex") as? [Int]
