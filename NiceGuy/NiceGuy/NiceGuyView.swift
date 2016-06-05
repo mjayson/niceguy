@@ -251,7 +251,105 @@ class NiceGuyView: UIViewController{
             }
     }
     
+    func ScheduleAllNotifications(){
+        
+        let Read_index = defaults.objectForKey("usedIndex") as? [Int]
+        
+        // if there's an array stored in NSUserDefaults then load it.
+        if Read_index != nil {
+            usedIndexArray = Read_index!
+            
+            //check array to see if there are any zeros in it
+            if (usedIndexArray.contains(0) != true) {
+                
+                //if there is not a zero, then...replace values of array with 100 0s
+                
+                for index in 1...100 {
+                    
+                    usedIndexArray[index] = 0
+                    
+                }
+                
+                defaults.setObject(usedIndexArray, forKey: "usedIndex")
+                
+            }
+            
+            
+        }
+            
+            //create new array with previous function and store values
+        else{
+            set_array_to_default()
+        }
+        
+        
+        // THIS CODE SCHEDULES ONE NOTIFICATION WITH A GIVEN TIME AND TEXT
+        // GOAL: WE NEED TO SCHEDULE ALL 100 COMPLIMENTS TO BE SHOWN ON NOON ONE DAY AFTER THE NEXT
+        
+        var calendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        var notification = UILocalNotification()
+        
+        // 1. Set variable fireDate equal to the current time and date
+        var dateFire = NSDate()
+        // 2. Create variable “fireComponents”, which breaks out the different aspects of time/date into parts (day/months/year/hour/etc.)
+        var fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+        
+        
+        
+        /*
+         // 3. Ask, ‘if hour is greater than noon right now, then do something to our fireDate value’
+         if (fireComponents.hour >= 12) {
+         dateFire=dateFire.dateByAddingTimeInterval(86400) // Use tomorrow's date
+         fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+         }
+         
+         
+         fireComponents.hour = 12  //change to 12
+         fireComponents.minute = 0
+         dateFire = calendar.dateFromComponents(fireComponents)!
+         
+         while usedIndexArray.contains(0) == true {
+         // set date equal to today at noon if we haven’t reached it yet. Or if we have, it sets it equal to noon tomorrow
+         notification.fireDate = dateFire
+         //returns unused compliment
+         notification.alertBody = return_unique_compliment()
+         
+         //schedule notifications
+         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+         
+         
+         // adds 24 hrs to whatever the last date and time were
+         dateFire=dateFire.dateByAddingTimeInterval(86400)
+         
+         }  */
+        
+        
+        
+        
+        fireComponents.hour = 14
+        fireComponents.minute = 5
+        dateFire = calendar.dateFromComponents(fireComponents)!
+        
+        while usedIndexArray.contains(0) == true {
+            // set date equal to today at noon if we haven’t reached it yet. Or if we have, it sets it equal to noon tomorrow
+            notification.fireDate = dateFire
+            //returns unused compliment
+            notification.alertBody = return_unique_compliment()
+            
+            //schedule notifications
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+            
+            print("We scheduled a notification")
+            // adds 24 hrs to whatever the last date and time were
+            dateFire=dateFire.dateByAddingTimeInterval(20)
+            
+        }
+        
+        defaults.setBool(true, forKey: "scheduleAllNotificationsHasRun")
     
+    }
+        
+        
     override func viewDidAppear(animated: Bool) {
 
         display_unique_compliment()
@@ -269,73 +367,48 @@ class NiceGuyView: UIViewController{
     
         super.viewDidLoad()
         
-    
-        // THIS CODE SCHEDULES ONE NOTIFICATION WITH A GIVEN TIME AND TEXT
-        // GOAL: WE NEED TO SCHEDULE ALL 100 COMPLIMENTS TO BE SHOWN ON NOON ONE DAY AFTER THE NEXT
-
-        var calendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        var notification = UILocalNotification()
+        // if haven't called function ScheduleAllNotifications, then call it. If we have in the past, don't.
         
-        // 1. Set variable fireDate equal to the current time and date
-        var dateFire = NSDate()
-        // 2. Create variable “fireComponents”, which breaks out the different aspects of time/date into parts (day/months/year/hour/etc.)
-      var fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
-        // 3. Ask, ‘if hour is greater than noon right now, then do something to our fireDate value’
-        if (fireComponents.hour >= 12) {
-            dateFire=dateFire.dateByAddingTimeInterval(86400) // Use tomorrow's date
-            fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+        let scheduleNotificationsFlag = defaults.boolForKey("scheduleAllNotificationsHasRun")
+        
+        if scheduleNotificationsFlag == false {
+            ScheduleAllNotifications()
         }
-        fireComponents.hour = 12
-        fireComponents.minute = 0
-        dateFire = calendar.dateFromComponents(fireComponents)!
         
-        while usedIndexArray.contains(0) == true {
-            // set date equal to today at noon if we haven’t reached it yet. Or if we have, it sets it equal to noon tomorrow
-            notification.fireDate = dateFire
-            //returns unused compliment
-            notification.alertBody = return_unique_compliment()
-            
-            //schedule notifications
-            UIApplication.sharedApplication().scheduleLocalNotification(notification)
-            
-            
-            // adds 24 hrs to whatever the last date and time were
-            dateFire=dateFire.dateByAddingTimeInterval(86400)
-            
-        }
-
+        else{
         
-        
-        let Read_index = defaults.objectForKey("usedIndex") as? [Int]
-        
-        // if there's an array stored in NSUserDefaults then load it.
-        if Read_index != nil {
-            usedIndexArray = Read_index!
-        
-            //check array to see if there are any zeros in it
-            if (usedIndexArray.contains(0) != true) {
+            let Read_index = defaults.objectForKey("usedIndex") as? [Int]
             
-                //if there is not a zero, then...replace values of array with 100 0s
+            // if there's an array stored in NSUserDefaults then load it.
+            if Read_index != nil {
+                usedIndexArray = Read_index!
                 
-                for index in 1...100 {
+                //check array to see if there are any zeros in it
+                if (usedIndexArray.contains(0) != true) {
                     
-                    usedIndexArray[index] = 0
+                    //if there is not a zero, then...replace values of array with 100 0s
+                    
+                    for index in 1...100 {
+                        
+                        usedIndexArray[index] = 0
+                        
+                    }
+                    
+                    defaults.setObject(usedIndexArray, forKey: "usedIndex")
                     
                 }
                 
-                defaults.setObject(usedIndexArray, forKey: "usedIndex")
-        
+                
+            }
+                
+                //create new array with previous function and store values
+            else{
+                set_array_to_default()
             }
 
-        
-        }
-                
-            //create new array with previous function and store values
-        else{
-            set_array_to_default()
+            
         }
         
-        //If not, then we create a new array
         
     }
         // Setup time and date for daily compliment delivery

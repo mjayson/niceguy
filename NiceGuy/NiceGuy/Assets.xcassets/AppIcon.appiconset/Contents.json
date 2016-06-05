@@ -64,6 +64,12 @@
       "idiom" : "ipad",
       "filename" : "niceGuyIcon152.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "Icon_167.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
