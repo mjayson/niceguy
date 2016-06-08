@@ -292,7 +292,7 @@ class NiceGuyView: UIViewController{
         // 1. Set variable fireDate equal to the current time and date
         var dateFire = NSDate()
         // 2. Create variable “fireComponents”, which breaks out the different aspects of time/date into parts (day/months/year/hour/etc.)
-        var fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute], fromDate: dateFire)
+        var fireComponents = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second], fromDate: dateFire)
         
         
         
@@ -304,7 +304,7 @@ class NiceGuyView: UIViewController{
          }
          
          
-         fireComponents.hour = 12  //change to 12
+         fireComponents.hour = 12
          fireComponents.minute = 0
          dateFire = calendar.dateFromComponents(fireComponents)!
          
@@ -325,9 +325,7 @@ class NiceGuyView: UIViewController{
         
         
         
-        
-        fireComponents.hour = 14
-        fireComponents.minute = 5
+        fireComponents.minute = fireComponents.minute + 1
         dateFire = calendar.dateFromComponents(fireComponents)!
         
         while usedIndexArray.contains(0) == true {
@@ -341,7 +339,7 @@ class NiceGuyView: UIViewController{
             
             print("We scheduled a notification")
             // adds 24 hrs to whatever the last date and time were
-            dateFire=dateFire.dateByAddingTimeInterval(20)
+            dateFire=dateFire.dateByAddingTimeInterval(30)
             
         }
         
@@ -352,21 +350,6 @@ class NiceGuyView: UIViewController{
         
     override func viewDidAppear(animated: Bool) {
 
-        display_unique_compliment()
-        
-        
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
-        
-    }
-    
-    override func viewDidLoad() {
-    
-        super.viewDidLoad()
-        
         // if haven't called function ScheduleAllNotifications, then call it. If we have in the past, don't.
         
         let scheduleNotificationsFlag = defaults.boolForKey("scheduleAllNotificationsHasRun")
@@ -374,9 +357,9 @@ class NiceGuyView: UIViewController{
         if scheduleNotificationsFlag == false {
             ScheduleAllNotifications()
         }
-        
+            
         else{
-        
+            
             let Read_index = defaults.objectForKey("usedIndex") as? [Int]
             
             // if there's an array stored in NSUserDefaults then load it.
@@ -405,9 +388,26 @@ class NiceGuyView: UIViewController{
             else{
                 set_array_to_default()
             }
-
+            
             
         }
+
+        
+        display_unique_compliment()
+        
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        
+    }
+    
+    override func viewDidLoad() {
+    
+        super.viewDidLoad()
+        
         
         
     }

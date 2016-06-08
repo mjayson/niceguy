@@ -20,29 +20,23 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-1G-wwa">
                                 <rect key="frame" x="126" y="28" width="123" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="123" id="A1p-OH-ph2"/>
-                                    <constraint firstAttribute="height" constant="41" id="Mek-Oh-gak"/>
+                                    <constraint firstAttribute="height" constant="41" id="5FH-je-WSd"/>
+                                    <constraint firstAttribute="width" constant="123" id="Xhu-Od-aPs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="33"/>
                                 <color key="textColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
-                                <rect key="frame" x="3" y="107" width="369" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="b5B-Qn-PTb"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
+                                <rect key="frame" x="16" y="107" width="343" height="55"/>
                                 <string key="text">A daily dose of kindness 
 from your virtual BFF</string>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
                                 <rect key="frame" x="8" y="219" width="364" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="J1A-oP-8Ci"/>
-                                </constraints>
                                 <string key="text">-- Noon is now a special time
 
 -- Each day at noon, you'll get a 
@@ -57,14 +51,11 @@ from your virtual BFF</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="-9" id="3m7-qw-7EW"/>
-                            <constraint firstItem="wSt-YE-mw3" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="T4l-Xp-SBP"/>
-                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="iOE-1G-wwa" secondAttribute="bottom" constant="67" id="Tho-mb-nTk"/>
-                            <constraint firstItem="iOE-1G-wwa" firstAttribute="centerX" secondItem="wSt-YE-mw3" secondAttribute="centerX" id="Y2f-Wm-oc6"/>
-                            <constraint firstItem="wSt-YE-mw3" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" constant="-13" id="d6e-Wm-3tJ"/>
-                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="wSt-YE-mw3" secondAttribute="leading" id="m7P-79-OeU"/>
-                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="bottom" secondItem="TVo-Ms-pHE" secondAttribute="top" id="o02-R2-T1E"/>
-                            <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qFJ-9g-qoH"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" id="Aye-uj-kc0"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="iOE-1G-wwa" secondAttribute="bottom" constant="38" id="C6q-aR-faA"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="Tdj-iX-WQY"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" id="Vz2-fk-gf1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wSt-YE-mw3" secondAttribute="trailing" id="lBd-5r-eeA"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -75,7 +66,7 @@ from your virtual BFF</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIn-JU-yhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.5" y="375.5"/>
+            <point key="canvasLocation" x="-206.5" y="375.5"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="usc-rD-pZq">
@@ -89,21 +80,36 @@ from your virtual BFF</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
-                                <rect key="frame" x="142" y="394" width="91" height="30"/>
-                                <state key="normal" title="Sound good?"/>
-                                <connections>
-                                    <action selector="PressSoundsGood:" destination="uTA-rs-QeB" eventType="touchUpInside" id="5XT-sy-GJf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To get make-you-feel-amazing compliments, you'll need to say &quot;Yes&quot; to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
-                                <rect key="frame" x="9" y="62" width="357" height="113"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get make-you-feel-amazing compliments, you'll need to say &quot;Yes&quot; to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
+                                <rect key="frame" x="16" y="40" width="343" height="58"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
+                                <rect key="frame" x="117" y="163" width="141" height="63"/>
+                                <color key="backgroundColor" white="0.61626965047529081" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="HN8-Gh-SVd"/>
+                                    <constraint firstAttribute="height" constant="63" id="gCz-I3-sXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Sound good?">
+                                    <color key="titleColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressSoundsGood:" destination="uTA-rs-QeB" eventType="touchUpInside" id="5XT-sy-GJf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="20" id="Td4-Ju-dTX"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="UNe-5Q-F2m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" id="cgV-6d-w1L"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="65" id="rEh-FE-Ea0"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="wNv-Lu-R3a"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -112,7 +118,7 @@ from your virtual BFF</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tX0-dK-wiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216.5" y="1037.5"/>
+            <point key="canvasLocation" x="288.5" y="375.5"/>
         </scene>
         <!--Nice Guy View-->
         <scene sceneID="Ewt-qM-JVQ">
@@ -127,22 +133,11 @@ from your virtual BFF</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-2V-Bww">
-                                <rect key="frame" x="0.0" y="648" width="375" height="19"/>
+                                <rect key="frame" x="0.0" y="642" width="375" height="19"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKV-qA-pCA">
-                                <rect key="frame" x="0.0" y="644" width="25" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="dPp-iJ-eGV"/>
-                                    <constraint firstAttribute="height" constant="23" id="sfU-7K-RVq"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Logout"/>
-                                <connections>
-                                    <action selector="btnFBLoginPressed:" destination="4DX-zn-dt7" eventType="touchUpInside" id="utc-ew-7lI"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-tK-SEy">
                                 <rect key="frame" x="20" y="122" width="335" height="161"/>
                                 <constraints>
@@ -162,13 +157,13 @@ from your virtual BFF</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mKV-qA-pCA" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leading" id="13V-3A-dr2"/>
-                            <constraint firstItem="CRN-2V-Bww" firstAttribute="leading" secondItem="mKV-qA-pCA" secondAttribute="leading" id="1hk-2C-JO4"/>
                             <constraint firstItem="CRN-2V-Bww" firstAttribute="centerX" secondItem="PnL-tK-SEy" secondAttribute="centerX" id="3bi-7R-WmC"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leadingMargin" constant="4" id="7DJ-Jn-lym"/>
-                            <constraint firstItem="CRN-2V-Bww" firstAttribute="bottom" secondItem="X0w-6J-ZcA" secondAttribute="top" id="FB4-Zy-QTI"/>
-                            <constraint firstItem="mKV-qA-pCA" firstAttribute="bottom" secondItem="X0w-6J-ZcA" secondAttribute="top" id="Ps3-C6-V1c"/>
+                            <constraint firstItem="CRN-2V-Bww" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="8Pq-hY-FlJ"/>
+                            <constraint firstItem="X0w-6J-ZcA" firstAttribute="top" secondItem="CRN-2V-Bww" secondAttribute="bottom" constant="6" id="SEK-xf-NdM"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="102" id="hXw-3u-tm6"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="102" id="xAU-gi-RyX"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="xwy-2W-qzQ"/>
                             <constraint firstAttribute="trailing" secondItem="CRN-2V-Bww" secondAttribute="trailing" id="ypd-eP-cMu"/>
                         </constraints>
                     </view>
@@ -183,9 +178,6 @@ from your virtual BFF</string>
             <point key="canvasLocation" x="781.5" y="375.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Logout" width="512" height="512"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fid-vI-jZr"/>
     </inferredMetricsTieBreakers>

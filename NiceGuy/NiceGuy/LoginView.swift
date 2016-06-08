@@ -73,7 +73,20 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
             
             print("Login complete!")
             
-            self.performSegueWithIdentifier("showNew", sender: self)
+            let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+            
+            if settings!.types == .None {
+                
+                self.performSegueWithIdentifier("HasNotApprovedNotifications", sender: self)
+                
+            }
+                
+                
+                //if he  has given us pemrission for notifications, transition to compliment view
+            else{
+                self.performSegueWithIdentifier("showNew", sender: self)
+                
+            }
             
         }
             
@@ -125,7 +138,7 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
                 }
                     
                     
-                //if he he has given us pemrission for notifications, transition to compliment view
+                //if he  has given us pemrission for notifications, transition to compliment view
                 else{
                     self.performSegueWithIdentifier("showNew", sender: self)
 

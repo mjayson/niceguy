@@ -359,8 +359,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Jayson (3G6236LCUG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Jayson (3G6236LCUG)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -372,7 +372,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
-				PROVISIONING_PROFILE = "e82f4fa3-f0bc-40cf-8d93-43197b02cd22";
+				PROVISIONING_PROFILE = "f3692e26-7fc1-4978-9a21-caeb407bd8aa";
 			};
 			name = Debug;
 		};
@@ -381,8 +381,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Jayson (3G6236LCUG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Jayson (3G6236LCUG)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Jayson (3ANLK88KDZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -394,7 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattjayson.niceguy;
 				PRODUCT_NAME = NiceGuy;
-				PROVISIONING_PROFILE = "e82f4fa3-f0bc-40cf-8d93-43197b02cd22";
+				PROVISIONING_PROFILE = "f3692e26-7fc1-4978-9a21-caeb407bd8aa";
 			};
 			name = Release;
 		};
