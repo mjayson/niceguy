@@ -281,7 +281,7 @@ personalized just for you</string>
                                     <constraint firstAttribute="height" constant="63" id="gCz-I3-sXc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
-                                <state key="normal" title="Sound good?">
+                                <state key="normal" title="Sounds good!">
                                     <color key="titleColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
