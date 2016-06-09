@@ -21,42 +21,213 @@
                                 <rect key="frame" x="126" y="28" width="123" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="5FH-je-WSd"/>
+                                    <constraint firstAttribute="height" constant="41" id="HP8-tJ-Yds"/>
                                     <constraint firstAttribute="width" constant="123" id="Xhu-Od-aPs"/>
+                                    <constraint firstAttribute="width" constant="123" id="poI-ey-g4C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="33"/>
                                 <color key="textColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5FH-je-WSd"/>
+                                        <exclude reference="Xhu-Od-aPs"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
-                                <rect key="frame" x="16" y="107" width="343" height="55"/>
-                                <string key="text">A daily dose of kindness 
-from your virtual BFF</string>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A daily dose of kindness from your virtual BFF" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-YE-mw3">
+                                <rect key="frame" x="11" y="75" width="353" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="iBo-v2-Yf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iBo-v2-Yf1"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
-                                <rect key="frame" x="8" y="219" width="364" height="160"/>
-                                <string key="text">-- Noon is now a special time
-
--- Each day at noon, you'll get a 
-   compliment
-
--- It could change everything about 
-   your day...</string>
-                                <fontDescription key="fontDescription" name="CourierNewPS-ItalicMT" family="Courier New" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-YS-0ZE">
+                                <rect key="frame" x="16" y="493" width="343" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Zu3-IL-vEU"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">a new compliment 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Noteworthy-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">every day
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Noteworthy-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">at 12pm
+personalized just for you</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Noteworthy-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zu3-IL-vEU"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="31" id="0tP-SG-f9I"/>
                             <constraint firstItem="wSt-YE-mw3" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" id="Aye-uj-kc0"/>
                             <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="iOE-1G-wwa" secondAttribute="bottom" constant="38" id="C6q-aR-faA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" constant="4" id="KSM-zU-Sfs"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="KUQ-k9-eBL"/>
+                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="20" id="LZY-73-YKY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" id="MCR-LG-rqy"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="Qus-Bq-2J2"/>
                             <constraint firstItem="iOE-1G-wwa" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="Tdj-iX-WQY"/>
                             <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" id="Vz2-fk-gf1"/>
+                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="130" id="WNv-bc-EU6"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" id="ZVU-yo-jwd"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" id="bwH-N9-3i8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Pj-YS-0ZE" secondAttribute="trailing" id="dRv-9B-7Nw"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="centerX" secondItem="wSt-YE-mw3" secondAttribute="centerX" id="dkr-vQ-ckv"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="trailing" secondItem="3kA-9i-r9W" secondAttribute="trailingMargin" id="eyv-Nh-bsp"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="h0Q-nu-w5W"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" constant="-7" id="jrS-hl-GZE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wSt-YE-mw3" secondAttribute="trailing" id="lBd-5r-eeA"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="60" id="ll2-lM-DGx"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" constant="-22" id="m27-7S-DH1"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="leading" secondItem="3kA-9i-r9W" secondAttribute="leadingMargin" id="nRU-8S-6bs"/>
+                            <constraint firstItem="TVo-Ms-pHE" firstAttribute="top" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="22" id="pF5-AX-Hab"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="centerX" secondItem="iOE-1G-wwa" secondAttribute="centerX" id="pes-oe-8M7"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="iOE-1G-wwa" secondAttribute="bottom" constant="41" id="qfH-L7-dmk"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="60" id="r4w-ft-6Co"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1Pj-YS-0ZE" secondAttribute="bottom" constant="110" id="v9n-91-HWI"/>
+                            <constraint firstItem="iOE-1G-wwa" firstAttribute="top" secondItem="y6Q-6x-qjJ" secondAttribute="bottom" constant="8" id="vIU-TK-VCn"/>
+                            <constraint firstItem="1Pj-YS-0ZE" firstAttribute="centerX" secondItem="3kA-9i-r9W" secondAttribute="centerX" id="xF7-iq-aoz"/>
+                            <constraint firstItem="wSt-YE-mw3" firstAttribute="top" secondItem="iOE-1G-wwa" secondAttribute="bottom" constant="6" id="zMW-Yh-6Ej"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0tP-SG-f9I"/>
+                                <exclude reference="Aye-uj-kc0"/>
+                                <exclude reference="C6q-aR-faA"/>
+                                <exclude reference="Qus-Bq-2J2"/>
+                                <exclude reference="lBd-5r-eeA"/>
+                                <exclude reference="ll2-lM-DGx"/>
+                                <exclude reference="m27-7S-DH1"/>
+                                <exclude reference="pes-oe-8M7"/>
+                                <exclude reference="qfH-L7-dmk"/>
+                                <exclude reference="r4w-ft-6Co"/>
+                                <exclude reference="Tdj-iX-WQY"/>
+                                <exclude reference="Vz2-fk-gf1"/>
+                                <exclude reference="KSM-zU-Sfs"/>
+                                <exclude reference="MCR-LG-rqy"/>
+                                <exclude reference="ZVU-yo-jwd"/>
+                                <exclude reference="dRv-9B-7Nw"/>
+                                <exclude reference="dkr-vQ-ckv"/>
+                                <exclude reference="jrS-hl-GZE"/>
+                                <exclude reference="nRU-8S-6bs"/>
+                                <exclude reference="v9n-91-HWI"/>
+                                <exclude reference="xF7-iq-aoz"/>
+                                <exclude reference="WNv-bc-EU6"/>
+                                <exclude reference="pF5-AX-Hab"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -80,23 +251,47 @@ from your virtual BFF</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get make-you-feel-amazing compliments, you'll need to say &quot;Yes&quot; to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
-                                <rect key="frame" x="16" y="40" width="343" height="58"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="To get make-you-feel-amazing compliments, you'll need to say 'Yes' to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
+                                <rect key="frame" x="16" y="79" width="342" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Plk-8c-clp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Plk-8c-clp"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
-                                <rect key="frame" x="117" y="163" width="141" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-BP-8Nv">
+                                <rect key="frame" x="160" y="642" width="55" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
+                                <rect key="frame" x="129" y="269" width="120" height="43"/>
                                 <color key="backgroundColor" white="0.61626965047529081" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="C5h-wl-cOT"/>
                                     <constraint firstAttribute="width" constant="141" id="HN8-Gh-SVd"/>
+                                    <constraint firstAttribute="height" constant="63" id="Unh-BU-0wE"/>
                                     <constraint firstAttribute="height" constant="63" id="gCz-I3-sXc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
                                 <state key="normal" title="Sound good?">
                                     <color key="titleColor" red="0.10148358590000001" green="0.10148358590000001" blue="0.10148358590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C5h-wl-cOT"/>
+                                        <exclude reference="HN8-Gh-SVd"/>
+                                        <exclude reference="Unh-BU-0wE"/>
+                                        <exclude reference="gCz-I3-sXc"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="PressSoundsGood:" destination="uTA-rs-QeB" eventType="touchUpInside" id="5XT-sy-GJf"/>
                                 </connections>
@@ -104,12 +299,46 @@ from your virtual BFF</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" constant="1" id="3re-af-q1q"/>
+                            <constraint firstItem="1Kk-BP-8Nv" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="6ow-QO-yFq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" constant="5" id="B7e-bv-0Ph"/>
+                            <constraint firstItem="x3X-sn-y11" firstAttribute="top" secondItem="1Kk-BP-8Nv" secondAttribute="bottom" constant="6" id="ENR-92-TtI"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="65" id="GCe-iB-8Zh"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="57" id="JQY-0V-fpJ"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="K4g-3m-XzJ"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="20" id="MyF-ts-QEH"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="57" id="NF8-8S-wlu"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="Psq-hH-07Z"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="20" id="Td4-Ju-dTX"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="UNe-5Q-F2m"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="59" id="aYO-RW-t7l"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="bFZ-0T-wIm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" id="cgV-6d-w1L"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="12" id="gGr-yu-EtS"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="126" id="glQ-0L-LO2"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="65" id="rEh-FE-Ea0"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="tsD-dF-wSS"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="wNv-Lu-R3a"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="sv2-A9-I9c" secondAttribute="top" constant="163" id="wra-nT-6AH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B7e-bv-0Ph"/>
+                                <exclude reference="MyF-ts-QEH"/>
+                                <exclude reference="Td4-Ju-dTX"/>
+                                <exclude reference="UNe-5Q-F2m"/>
+                                <exclude reference="cgV-6d-w1L"/>
+                                <exclude reference="gGr-yu-EtS"/>
+                                <exclude reference="tsD-dF-wSS"/>
+                                <exclude reference="GCe-iB-8Zh"/>
+                                <exclude reference="JQY-0V-fpJ"/>
+                                <exclude reference="NF8-8S-wlu"/>
+                                <exclude reference="bFZ-0T-wIm"/>
+                                <exclude reference="rEh-FE-Ea0"/>
+                                <exclude reference="wNv-Lu-R3a"/>
+                                <exclude reference="wra-nT-6AH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -133,13 +362,13 @@ from your virtual BFF</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-2V-Bww">
-                                <rect key="frame" x="0.0" y="642" width="375" height="19"/>
+                                <rect key="frame" x="160" y="642" width="55" height="19"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-tK-SEy">
-                                <rect key="frame" x="20" y="122" width="335" height="161"/>
+                                <rect key="frame" x="16" y="188" width="343" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="161" id="QOq-nK-tE2"/>
                                 </constraints>
@@ -147,25 +376,49 @@ from your virtual BFF</string>
                                     <fragment content="Wait for it...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="CourierNewPSMT"/>
+                                            <font key="NSFont" size="24" name="Noteworthy-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QOq-nK-tE2"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="CRN-2V-Bww" firstAttribute="centerX" secondItem="PnL-tK-SEy" secondAttribute="centerX" id="3bi-7R-WmC"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leadingMargin" constant="4" id="7DJ-Jn-lym"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="leading" secondItem="5Nl-z8-HmL" secondAttribute="leadingMargin" id="7jR-qM-jzQ"/>
                             <constraint firstItem="CRN-2V-Bww" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="8Pq-hY-FlJ"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="102" id="A8P-6z-hGt"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="trailing" secondItem="5Nl-z8-HmL" secondAttribute="trailingMargin" id="Eyg-qx-HY8"/>
                             <constraint firstItem="X0w-6J-ZcA" firstAttribute="top" secondItem="CRN-2V-Bww" secondAttribute="bottom" constant="6" id="SEK-xf-NdM"/>
+                            <constraint firstItem="CRN-2V-Bww" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="cDx-pf-8oh"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="102" id="hXw-3u-tm6"/>
+                            <constraint firstItem="X0w-6J-ZcA" firstAttribute="top" secondItem="CRN-2V-Bww" secondAttribute="bottom" constant="6" id="iAo-Fr-Tns"/>
+                            <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="168" id="rYh-c4-T9Z"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="top" secondItem="0aY-R5-kOR" secondAttribute="bottom" constant="102" id="xAU-gi-RyX"/>
                             <constraint firstItem="PnL-tK-SEy" firstAttribute="centerX" secondItem="5Nl-z8-HmL" secondAttribute="centerX" id="xwy-2W-qzQ"/>
                             <constraint firstAttribute="trailing" secondItem="CRN-2V-Bww" secondAttribute="trailing" id="ypd-eP-cMu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7DJ-Jn-lym"/>
+                                <exclude reference="A8P-6z-hGt"/>
+                                <exclude reference="hXw-3u-tm6"/>
+                                <exclude reference="xAU-gi-RyX"/>
+                                <exclude reference="xwy-2W-qzQ"/>
+                                <exclude reference="3bi-7R-WmC"/>
+                                <exclude reference="8Pq-hY-FlJ"/>
+                                <exclude reference="ypd-eP-cMu"/>
+                                <exclude reference="SEK-xf-NdM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
