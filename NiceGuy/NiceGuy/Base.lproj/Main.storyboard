@@ -251,32 +251,14 @@ personalized just for you</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="To get make-you-feel-amazing compliments, you'll need to say 'Yes' to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
-                                <rect key="frame" x="16" y="79" width="342" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="Plk-8c-clp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Plk-8c-clp"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-BP-8Nv">
-                                <rect key="frame" x="160" y="642" width="55" height="19"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
-                                <rect key="frame" x="129" y="269" width="120" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-GV-2X4">
+                                <rect key="frame" x="129" y="312" width="120" height="43"/>
                                 <color key="backgroundColor" white="0.61626965047529081" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="C5h-wl-cOT"/>
+                                    <constraint firstAttribute="width" constant="120" id="Eos-3D-UEr"/>
                                     <constraint firstAttribute="width" constant="141" id="HN8-Gh-SVd"/>
+                                    <constraint firstAttribute="height" constant="43" id="QFp-tM-Bbs"/>
                                     <constraint firstAttribute="height" constant="63" id="Unh-BU-0wE"/>
                                     <constraint firstAttribute="height" constant="63" id="gCz-I3-sXc"/>
                                 </constraints>
@@ -296,6 +278,26 @@ personalized just for you</string>
                                     <action selector="PressSoundsGood:" destination="uTA-rs-QeB" eventType="touchUpInside" id="5XT-sy-GJf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NiceGuy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-BP-8Nv">
+                                <rect key="frame" x="160" y="642" width="55" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="To get make-you-feel-amazing compliments, you'll need to say 'Yes' to getting notifactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-e1-6HT">
+                                <rect key="frame" x="16" y="79" width="343" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Plk-8c-clp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Plk-8c-clp"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -304,18 +306,21 @@ personalized just for you</string>
                             <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" constant="5" id="B7e-bv-0Ph"/>
                             <constraint firstItem="x3X-sn-y11" firstAttribute="top" secondItem="1Kk-BP-8Nv" secondAttribute="bottom" constant="6" id="ENR-92-TtI"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="65" id="GCe-iB-8Zh"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="H6Z-Un-svR"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="57" id="JQY-0V-fpJ"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="K4g-3m-XzJ"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="20" id="MyF-ts-QEH"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="57" id="NF8-8S-wlu"/>
-                            <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="Psq-hH-07Z"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" constant="1.5" id="Psq-hH-07Z"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="trailing" secondItem="sv2-A9-I9c" secondAttribute="trailingMargin" id="Sds-pX-ClW"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="20" id="Td4-Ju-dTX"/>
+                            <constraint firstItem="Tb7-e1-6HT" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="Tut-EN-YFL"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="UNe-5Q-F2m"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="59" id="aYO-RW-t7l"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="bFZ-0T-wIm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tb7-e1-6HT" secondAttribute="trailing" id="cgV-6d-w1L"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="top" secondItem="FzL-RH-UZG" secondAttribute="bottom" constant="12" id="gGr-yu-EtS"/>
-                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="126" id="glQ-0L-LO2"/>
+                            <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="169" id="glQ-0L-LO2"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="top" secondItem="Tb7-e1-6HT" secondAttribute="bottom" constant="65" id="rEh-FE-Ea0"/>
                             <constraint firstItem="Tb7-e1-6HT" firstAttribute="leading" secondItem="sv2-A9-I9c" secondAttribute="leadingMargin" id="tsD-dF-wSS"/>
                             <constraint firstItem="XVE-GV-2X4" firstAttribute="centerX" secondItem="sv2-A9-I9c" secondAttribute="centerX" id="wNv-Lu-R3a"/>
@@ -323,7 +328,9 @@ personalized just for you</string>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="3re-af-q1q"/>
                                 <exclude reference="B7e-bv-0Ph"/>
+                                <exclude reference="K4g-3m-XzJ"/>
                                 <exclude reference="MyF-ts-QEH"/>
                                 <exclude reference="Td4-Ju-dTX"/>
                                 <exclude reference="UNe-5Q-F2m"/>
